@@ -7,7 +7,9 @@ Examples:
 
 */
 function doubleValues(arr) {
-
+    return arr.map(function (value) {
+        return value * 2;
+    });
 }
 
 /*
