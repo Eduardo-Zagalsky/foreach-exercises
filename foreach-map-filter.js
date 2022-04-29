@@ -21,7 +21,9 @@ Examples:
 
 */
 function onlyEvenValues(arr) {
-
+    return arr.filter(function (value) {
+        return value % 2 === 0;
+    });
 }
 
 /*
