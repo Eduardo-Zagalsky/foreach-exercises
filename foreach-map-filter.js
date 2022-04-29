@@ -35,7 +35,11 @@ Examples:
 
 */
 function showFirstAndLast(arr) {
-
+    return arr.map(function (value) {
+        let first = value[0];
+        let last = value[value.length - 1];
+        return first + last;
+    });
 }
 
 /*
