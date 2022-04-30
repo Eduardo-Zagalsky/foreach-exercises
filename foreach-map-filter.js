@@ -69,7 +69,30 @@ Examples:
     vowelCount('I Am awesome and so are you') // {i: 1, a: 4, e: 3, o: 3, u: 1};
 */
 function vowelCount(str) {
+    strArray = Array.from(str);
+    let aCounter = 0;
+    let eCounter = 0;
+    let iCounter = 0;
+    let oCounter = 0;
+    let uCounter = 0;
+    let obj = {};
+    strArray.forEach(function (value) {
+        if (value == "A" || value == "a") {
+            aCounter++;
 
+        } else if (value == "E" || value == "e") {
+            eCounter++;
+        } else if (value == "I" || value == "i") {
+            iCounter++;
+        } else if (value == "O" || value == "o") {
+            oCounter++;
+        } else if (value == "U" || value == "u") {
+            uCounter++;
+        } else {
+            return obj;
+        }
+
+    });
 }
 
 /*
