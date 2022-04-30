@@ -52,7 +52,10 @@ Examples:
 
 */
 function addKeyAndValue(arr, key, value) {
-
+    arr.forEach(function (arrValue) {
+        arrValue[key] = value;
+    });
+    return arr;
 }
 
 /*
