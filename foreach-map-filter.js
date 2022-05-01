@@ -120,7 +120,10 @@ Examples:
 */
 
 function extractKey(arr, key) {
-
+    return arr.map(function (value) {
+        let val = value[key];
+        return val;
+    })
 }
 
 /*
